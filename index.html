@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cureus</title>
+
+    <style>
+    html, body {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        height:100%;
+        overflow: hidden;
+        background-color: black;
+    }
+
+    .wrapper {
+        position: relative;
+        aspect-ratio: 16 / 9;
+        background-image: url("img/Launchpage_D_2k_nohand.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .btn-go {
+        position: absolute;
+        top: 40.65%;
+        left: 36.2%;
+        height:27%;
+        width:15%;
+        background: radial-gradient(circle, rgba(255,255,255,0) 0%, rgba(235,70,38,1) 100%);
+        border-radius: 50%;
+        -webkit-transition: all 1s;
+        -moz-transition: prop time;
+        -ms-transition: prop time;
+        -o-transition: prop time;
+        transition: prop time;
+        mix-blend-mode: multiply;
+        opacity: 0;
+    }
+
+    .btn-go:hover {
+        -webkit-transform: scale(2);
+        border:1px solid red;
+        opacity: 1;
+    }
+
+    .hand {
+        position: absolute;
+        bottom: 8.5%;
+        left: -8.5%;
+        z-index: 99;
+        width:50%;
+        height:auto;
+    }
+    </style>
+
+</head>
+<body>
+    <div class="wrapper">
+        <a href="#" class="btn-go"></a><img class="hand" src="img/hand.svg">
+    </div>
+</body>
+</html>
